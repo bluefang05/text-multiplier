@@ -1,0 +1,61 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Text Multiplier</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="fonts/OpenDyslexic3-Regular.ttf">
+    <script src="js/vanilla/script.js" defer></script>
+</head>
+
+<body>
+    <h2>Type your text:</h2>
+    <textarea id="inputTextArea"></textarea>
+    <div id="options">
+        <label for="textMultiplyerAutoUpdate">
+            <input type="checkbox" id="textMultiplyerAutoUpdate" checked>
+            Auto update
+        </label>
+        <fieldset id="caseOptions">
+            <legend>Case options</legend>
+            <label for="rtextMultiplyerCase1">
+                <input type="radio" id="rtextMultiplyerCase1" name="case" value="asItIs" checked>
+                As it is
+            </label>
+            <label for="rtextMultiplyerCase2">
+                <input type="radio" id="rtextMultiplyerCase2" name="case" value="lowercase">
+                Lowercase
+            </label>
+            <label for="rtextMultiplyerCase3">
+                <input type="radio" id="rtextMultiplyerCase3" name="case" value="uppercase">
+                Uppercase
+            </label>
+        </fieldset>
+        <label for="multiplyFactor">Multiply Factor (1-5)</label>
+        <select id="multiplyFactor">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+        <label for="darkModeCheckbox">
+            <input type="checkbox" id="darkModeCheckbox">
+            Dark Mode
+        </label>
+    </div>
+    <button id="multiplyButton">Multiply Letters</button>
+    <h2>Output:</h2>
+    <div id="fontSizeControl">
+        <h2>Font Size: <span id="fontSizeDisplay">16</span></h2>
+        <button id="increaseButton" class="fontSizeControl">+</button>
+        <button id="decreaseButton" class="fontSizeControl">-</button>
+    </div>
+
+    <div id="outputDiv"></div>
+
+
+
+</body>
+
+</html>

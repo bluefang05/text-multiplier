@@ -1,0 +1,141 @@
+/* Define primary colors */
+:root {
+    --primary-color: #333;
+    --secondary-color: #ddd;
+    --text-color: #333;
+    --background-color: #f5f5f5;
+    --border-color: #ddd;
+    --dark-mode-background: #333;
+    --dark-mode-text: #fff;
+    --font-size-small: 0.875rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.25rem;
+  }
+  
+  /* Global styles */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: var(--font-size-medium);
+    color: var(--text-color);
+    background-color: var(--background-color);
+  }
+  
+  /* Header styles */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    color: #fff;
+  }
+  
+  .header-logo {
+    font-size: var(--font-size-large);
+    font-weight: bold;
+  }
+  
+  .header-menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .menu-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+  }
+  
+  /* Button styles */
+  .button {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    font-size: var(--font-size-medium);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .button:hover {
+    background-color: #bbb;
+  }
+  
+  /* Label styles */
+  .label {
+    display: block;
+  margin-bottom: 0.5rem;
+    font-size: var(--font-size-medium);
+  }
+  
+  /* Input styles */
+  input[type="text"],
+  select {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-size: var(--font-size-medium);
+  }
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: var(--dark-mode-background);
+    color: var(--dark-mode-text);
+  }
+  
+  .dark-mode .header-menu .menu-link {
+    color: var(--secondary-color);
+  }
+  
+  .dark-mode .button {
+    background-color: var(--secondary-color);
+    color: var(--dark-mode-text);
+  }
+  
+  .dark-mode input[type="text"],
+  .dark-mode select {
+    border-color: var(--secondary-color);
+  }
+  
+  /* Font size controls */
+  .font-size-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .font-size-controls label {
+    font-size: var(--font-size-medium);
+  }
+  
+  .font-size-controls button {
+    font-size: var(--font-size-small);
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Multiply factor selector */
+  #multiply-factor-selector {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #multiply-factor-selector label {
+    font-size: var(--font-size-medium);
+  }
+  
+  #multiply-factor-selector select {
+    font-size: var(--font-size-medium);
+    padding: 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
