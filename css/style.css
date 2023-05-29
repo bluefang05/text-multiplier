@@ -14,7 +14,7 @@
   
   /* Global styles */
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'OpenDyslexic', Arial, sans-serif;
     font-size: var(--font-size-medium);
     color: var(--text-color);
     background-color: var(--background-color);
@@ -46,6 +46,9 @@
     font-size: var(--font-size-medium);
   }
   
+  #options{
+    margin-top: 20px;
+  }
   /* Button styles */
   .button {
     display: inline-block;
@@ -59,14 +62,36 @@
     transition: background-color 0.2s ease-in-out;
   }
   
+  @font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic3-Regular.ttf') format('truetype');
+  }
+  
+
   .button:hover {
     background-color: #bbb;
+  }
+
+  #multiplyButton {
+    font-size: 22;
+    border-radius: 15px;
+    width: 300px;
+    height: 50px;
+    margin: 10px;
+  }
+
+  .fontSizeControl{
+    height: 30px;
+    width: 30px;
+    font-size: 15px;
+    
+    margin: 5px;
   }
   
   /* Label styles */
   .label {
     display: block;
-  margin-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
     font-size: var(--font-size-medium);
   }
   
@@ -74,11 +99,22 @@
   input[type="text"],
   select {
     display: block;
-    width: 100%;
+    width: 200px;
     padding: 0.5rem;
     border: 1px solid var(--border-color);
     border-radius: 4px;
     font-size: var(--font-size-medium);
+  }
+
+  #inputTextArea{
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  #outputDiv{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   
   /* Dark mode styles */
